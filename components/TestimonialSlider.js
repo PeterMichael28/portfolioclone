@@ -44,7 +44,7 @@ const TestimonialSlider = () => {
    className="h-[400px]"
  >
    {
-     testimonialData.slides.map( ( item, i ) => (
+     testimonialData.map( ( item, i ) => (
        <SwiperSlide key={i}>
          <div className="flex flex-col items-center md:flex-row gap-x-8 h-full px-16">
            {/* avatar name and position */}
