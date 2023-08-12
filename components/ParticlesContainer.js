@@ -27,8 +27,8 @@ const ParticlesContainer = () => {
       interactivity: {
         events: {
           onClick: {
-            enable: false,
-            mode: 'repulse'
+            enable: true,
+            mode: 'push'
           },
           onHover: {
             enable: true,
@@ -41,7 +41,7 @@ const ParticlesContainer = () => {
             quantity: 90
           },
           repulse: {
-            distance: 20,
+            distance: 200,
             duration: 0.4
           }
         }
@@ -74,7 +74,7 @@ const ParticlesContainer = () => {
         number: {
           density: {
             enable: true,
-            area: 8000,
+            area: 800,
 
           },
           value: 80
@@ -87,7 +87,7 @@ const ParticlesContainer = () => {
           type: 'circle'
         },
         size: {
-          value: {min:10, max:60}
+          value: {min:10, max:5}
         }
       },
       detectRetina: true
