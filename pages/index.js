@@ -62,7 +62,7 @@ const Home = () => {
 
        {/* particles */}
        <div className="">
-         {/* <ParticlesContainer /> */}
+         <ParticlesContainer />
        </div>
 
        {/* avatar */}
