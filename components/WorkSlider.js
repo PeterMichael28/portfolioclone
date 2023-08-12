@@ -62,7 +62,7 @@ const WorkSlider = () => {
       clickable: true
     }}
     modules={[FreeMode, Pagination]}
-    className="h-[280px] sm:h-[340px]"
+    className="h-[280px] sm:h-[340px] md:h-[450px]"
   >
     {
       workSlides.slides.map( ( item, i ) => (
@@ -70,7 +70,7 @@ const WorkSlider = () => {
           <div className="grid grid-cols-2 grid-rows-2 gap-5 cursor-pointer">
             { item.images.map( ( img, i ) => (
               <div key={i} className="relative rounded-lg overflow-hidden flex items-center justify-center group">
-                <div className="flex items-center justify-center relative overflow-hidden grou">
+                <div className="flex items-center justify-center relative overflow-hidden group">
                     {/* imgs */}
                     <Image src={img.path} alt="img" width={500} height={300}/>
 
